@@ -1,24 +1,7 @@
 ---
 name: version-inspector
-description: >-
-  Inspect IBM BAW snapshots and browse deployed containers. Handles read-only
-  queries, including snapshot metadata (version name, lifecycle status, creation
-  date, toolkit dependencies), process-app listings, and container inventories.
-  Works for both Process App and Toolkit types on BAW on-premises, BAW on Cloud,
-  and CP4BA. Use whenever an administrator wants to inspect, view, or browse
-  versions or snapshots. This skill is read-only and does not change state.
-  For state-changing lifecycle operations (installing applications, activating,
-  deactivating, deleting snapshots, or setting/syncing environment variables),
-  use version-lifecycle-manager.
-license: Apache-2.0
-compatibility: "IBM BAW 22.x and later; IBM CP4BA 22.x and later"
-allowed-tools:
-  - Bash
-metadata:
-  version: "1.0.0"
-  display_name: BAW Version Inspector
-  short_description: Browse and inspect BAW snapshot metadata — version names, lifecycle status, creation dates, and toolkit dependencies.
-  author: IBM BAW Team
+description: "Inspect IBM BAW snapshots and browse deployed containers. Handles read-only queries, including snapshot metadata (version name, lifecycle status, creation date, toolkit dependencies), process-app listings, and container inventories. Works for both Process App and Toolkit types on BAW on-premises, BAW on Cloud, and CP4BA. Use whenever an administrator wants to inspect, view, or browse versions or snapshots. This skill is read-only and does not change state. For state-changing lifecycle operations (installing applications, activating, deactivating, deleting snapshots, or setting/syncing environment variables), use version-lifecycle-manager."
+license: "Apache-2.0"
 ---
 # Version Inspector
 

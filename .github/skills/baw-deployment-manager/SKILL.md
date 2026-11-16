@@ -1,15 +1,7 @@
 ---
 name: baw-deployment-manager
-description: Deploy a process app or toolkit snapshot into a target IBM BAW (Business Automation Workflow) environment, list available process apps and toolkits with their snapshots, check available workflow servers, and monitor installation progress. Uses the BAW REST API to list containers, check workflow servers, POST a snapshot installation request, and poll the returned queue URL until the operation completes or fails. Use whenever the user wants to deploy, install, or promote a snapshot to a workflow environment, list process apps or toolkits, browse available snapshots, check deployment status, monitor an in-progress install, check available servers, list workflow servers, or when phrases like "deploy snapshot", "install process app", "promote to environment", "list process apps", "what toolkits are available", "show me the snapshots", "deployment status", "monitor deployment", "check install progress", "available servers", "workflow servers", or "what servers can I deploy to" appear. Also triggers on CP4BA.
-license: Apache-2.0
-compatibility: "IBM BAW 22.x and later; IBM CP4BA 22.x and later"
-allowed-tools:
-  - Bash
-metadata:
-  version: "1.0.0"
-  display_name: BAW Deployment Manager
-  short_description: Deploy a BAW process app or toolkit snapshot to a target environment and monitor the installation to completion.
-  author: IBM BAW Team
+description: "Deploy a process app or toolkit snapshot into a target IBM BAW (Business Automation Workflow) environment, list available process apps and toolkits with their snapshots, check available workflow servers, and monitor installation progress. Uses the BAW REST API to list containers, check workflow servers, POST a snapshot installation request, and poll the returned queue URL until the operation completes or fails. Use whenever the user wants to deploy, install, or promote a snapshot to a workflow environment, list process apps or toolkits, browse available snapshots, check deployment status, monitor an in-progress install, check available servers, list workflow servers, or when phrases like \"deploy snapshot\", \"install process app\", \"promote to environment\", \"list process apps\", \"what toolkits are available\", \"show me the snapshots\", \"deployment status\", \"monitor deployment\", \"check install progress\", \"available servers\", \"workflow servers\", or \"what servers can I deploy to\" appear. Also triggers on CP4BA."
+license: "Apache-2.0"
 ---
 <!-- baw-rest-ops: baw-ops.26.0.0.json: /std/bpm/containers, /std/bpm/containers/{container}/versions/{version}/install, /std/bpm/servers/workflow, /system/queue/{id} -->
 

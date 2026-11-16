@@ -1,18 +1,8 @@
 ---
 name: baw-container-inventory
 description: "Inspect the container inventory of a live IBM BAW server — list all Process Apps and Toolkits, count them, search by name or acronym, view metadata, and confirm whether a specific container exists. Use when a BAW administrator wants to know what is installed on a server without opening Workflow Center or BAStudio. Trigger phrases: 'list process apps', 'list toolkits', 'what containers are installed', 'how many process apps', 'does this app exist', 'find container', 'show me the toolkits', 'container inventory', 'what is installed in BAW', 'show container details', 'look up acronym'. This skill is read-only — it queries and reports. For snapshot lifecycle operations use version-lifecycle-manager; for running process instances use inspect-baw-processes."
-license: Apache-2.0
-compatibility: "IBM BAW 22.x and later; IBM CP4BA 22.x and later"
-allowed-tools:
-  - Read
-  - Bash
-metadata:
-  version: "1.0.0"
-  display_name: BAW Container Inventory
-  short_description: List and search all Process Apps and Toolkits installed on a live IBM BAW server without opening Workflow Center.
-  author: IBM BAW Team
+license: "Apache-2.0"
 ---
-
 > **⚠️ REST only — MCP is not supported by this skill.** All BAW interactions use the BAW REST API exclusively via HTTP calls to `{BAW_BASE_URL}`. Do not call any MCP tools at any point — regardless of whether an MCP server is connected or not. Never tell the user to connect an MCP server; this skill does not use one. If you find yourself reaching for an MCP tool, stop and use the REST equivalent from `references/baw-rest.md` instead.
 
 # BAW Container Inventory

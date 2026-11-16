@@ -1,17 +1,7 @@
 ---
 name: inspect-baw-processes
-description: "Use when a BAW administrator or operator wants to find, investigate, or take action on running IBM BAW process instances: retry failed processes, suspend or resume instances, change due dates, or answer questions like \"what's broken right now?\", \"show me everything overdue in the Claims app\", or \"why did this instance fail?\" Covers the full Process Inspector workflow: searching by status/app/owner/date, drilling into instance details and business data, and executing lifecycle actions. Do not use for authoring new processes (generate-baw-bpmn), creating coach widgets (create-baw-widget), or building custom portals (create-baw-portal). Do not use for audit readiness, compliance checks, or questions about whether a process application is ready for an audit. Use audit-baw-readiness for those."
-license: Apache-2.0
-compatibility: "IBM BAW 22.x and later; IBM CP4BA 22.x and later"
-allowed-tools:
-  - Read
-  - Edit
-  - Bash
-metadata:
-  version: "1.0.0"
-  display_name: Inspect BAW Processes
-  short_description: "Find, investigate, and act on running IBM BAW process instances: retry failures, suspend, resume, and change due dates."
-  author: IBM BAW Team
+description: "Use when a BAW administrator or operator wants to find, investigate, or take action on running IBM BAW process instances: retry failed processes, suspend or resume instances, change due dates, or answer questions like \\\"what's broken right now?\\\", \\\"show me everything overdue in the Claims app\\\", or \\\"why did this instance fail?\\\" Covers the full Process Inspector workflow: searching by status/app/owner/date, drilling into instance details and business data, and executing lifecycle actions. Do not use for authoring new processes (generate-baw-bpmn), creating coach widgets (create-baw-widget), or building custom portals (create-baw-portal). Do not use for audit readiness, compliance checks, or questions about whether a process application is ready for an audit. Use audit-baw-readiness for those."
+license: "Apache-2.0"
 ---
 # Inspect BAW Processes
 

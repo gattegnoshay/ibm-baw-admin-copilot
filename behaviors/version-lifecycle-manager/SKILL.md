@@ -1,24 +1,7 @@
 ---
 name: version-lifecycle-manager
-description: >-
-  Manages IBM Business Automation Workflow (BAW) Process App and Toolkit
-  version lifecycle via the Operations REST API — handles state-changing operations
-  including installing applications, managing snapshots (activating, deactivating,
-  deleting), and reading, setting, or synchronizing environment variables — no Process
-  Admin Console needed. Use when a BAW administrator wants to perform lifecycle
-  actions or state changes. Do NOT use for read-only queries, including snapshot metadata,
-  process-app listings, and container inventories — use version-inspector for those.
-  Supports BAW on-premises, BAW on Cloud, and CP4BA (IBM Cloud Pak for Business
-  Automation).
-license: Apache-2.0
-compatibility: "IBM BAW 22.x and later; IBM CP4BA 22.x and later"
-allowed-tools:
-  - Bash
-metadata:
-  version: "1.0.0"
-  display_name: BAW Version Lifecycle Manager
-  short_description: Activate, deactivate, install, and delete BAW snapshots and manage environment variables via the Operations REST API.
-  author: IBM BAW Team
+description: "Manages IBM Business Automation Workflow (BAW) Process App and Toolkit version lifecycle via the Operations REST API — handles state-changing operations including installing applications, managing snapshots (activating, deactivating, deleting), and reading, setting, or synchronizing environment variables — no Process Admin Console needed. Use when a BAW administrator wants to perform lifecycle actions or state changes. Do NOT use for read-only queries, including snapshot metadata, process-app listings, and container inventories — use version-inspector for those. Supports BAW on-premises, BAW on Cloud, and CP4BA (IBM Cloud Pak for Business Automation)."
+license: "Apache-2.0"
 ---
 # Version Lifecycle Manager
 
