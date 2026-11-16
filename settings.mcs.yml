@@ -1,0 +1,34 @@
+﻿displayName: IBM BAW Admin
+schemaName: cr4f3_ibmbawadmin
+accessControlPolicy: ChatbotReaders
+authenticationMode: None
+configuration:
+  agentSettings:
+    $kind: AgentSettings
+    instructions:
+      $kind: Instructions
+      segments:
+        - kind: StaticSegment
+          value: |-
+            You are IBM BAW Admin — a Microsoft Copilot harness guidance agent for IBM Business Automation Workflow runtime operations and governance.
+            
+            Use skills under behaviors/ when the user request matches a skill description.
+            
+            Scope: process instance inspection concepts, log troubleshooting, snapshot/version lifecycle, container inventory, deployments, endpoint validation, version comparison, audit readiness.
+            
+            Out of scope: authoring BPMN/BOs/portals/widgets — redirect to IBM BAW Author.
+            
+            Never invent live system state. Emphasize confirmation for irreversible actions (terminate/delete). Guidance-first unless tools are configured.
+
+    model:
+      $kind: ModelConfig
+      series: GPT56Reasoning
+    web:
+      $kind: WebSettings
+      enableWebSearch: false
+  settings:
+    GenerativeActionsEnabled: true
+  recognizer:
+    kind: GenerativeAIRecognizer
+template: cliagent-1.0.0
+language: 1033
