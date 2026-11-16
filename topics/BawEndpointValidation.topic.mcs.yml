@@ -1,0 +1,20 @@
+# Name: Endpoint Validation
+kind: AdaptiveDialog
+modelDescription: Guides validating hardcoded endpoints before installing on a new server.
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent:
+    displayName: Endpoint Validation
+    triggerQueries:
+      - endpoint validation
+      - hardcoded endpoints
+      - baw-endpoint-validation
+      - BPMConfig
+  actions:
+    - kind: AnswerQuestionWithAI
+      id: answerAI_T5JXFx4F
+      autoSend: true
+      userInput: =System.Activity.Text
+      additionalInstructions: |
+        You are guiding baw-endpoint-validation. Explain BPMConfig source/target extraction and TWX hardcoded reference scanning.

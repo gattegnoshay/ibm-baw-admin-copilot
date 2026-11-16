@@ -1,0 +1,22 @@
+# Name: Inspect BAW Processes
+kind: AdaptiveDialog
+modelDescription: Guides finding, investigating, and acting on running BAW process instances.
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent:
+    displayName: Inspect BAW Processes
+    triggerQueries:
+      - failed processes
+      - stuck process
+      - retry instance
+      - suspend resume BAW
+      - inspect-baw-processes
+      - overdue processes
+  actions:
+    - kind: AnswerQuestionWithAI
+      id: answerAI_kZgQ84OG
+      autoSend: true
+      userInput: =System.Activity.Text
+      additionalInstructions: |
+        You are guiding inspect-baw-processes. Explain search-by-status patterns, never asking for raw instance IDs first, status translation (stuck=Suspended, broken=Failed), valid transitions, and terminate confirmation. Guidance only — no live calls.

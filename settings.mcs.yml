@@ -1,0 +1,10 @@
+displayName: IBM BAW Admin
+schemaName: cr4f3_ibmbawadmin
+accessControlPolicy: ChatbotReaders
+authenticationMode: None
+configuration:
+  settings:
+    GenerativeActionsEnabled: true
+  recognizer:
+    kind: GenerativeAIRecognizer
+language: 1033

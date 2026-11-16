@@ -1,0 +1,20 @@
+# Name: Container Inventory
+kind: AdaptiveDialog
+modelDescription: Guides listing and searching Process Apps and Toolkits on a server.
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent:
+    displayName: Container Inventory
+    triggerQueries:
+      - container inventory
+      - list toolkits
+      - baw-container-inventory
+      - search process apps
+  actions:
+    - kind: AnswerQuestionWithAI
+      id: answerAI_YT8IZJI9
+      autoSend: true
+      userInput: =System.Activity.Text
+      additionalInstructions: |
+        You are guiding baw-container-inventory. Explain read-only inventory listing/search by name or acronym.

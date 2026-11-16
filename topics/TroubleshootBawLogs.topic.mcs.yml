@@ -1,0 +1,22 @@
+# Name: Troubleshoot BAW Logs
+kind: AdaptiveDialog
+modelDescription: Guides diagnosing BAW runtime failures from logs and FFDC.
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent:
+    displayName: Troubleshoot BAW Logs
+    triggerQueries:
+      - troubleshoot BAW logs
+      - FFDC
+      - messages.log
+      - SystemOut.log
+      - BPMD error
+      - troubleshoot-baw-logs
+  actions:
+    - kind: AnswerQuestionWithAI
+      id: answerAI_nhcUO7G3
+      autoSend: true
+      userInput: =System.Activity.Text
+      additionalInstructions: |
+        You are guiding troubleshoot-baw-logs. Explain correlating SystemOut/messages/trace/FFDC, identifying root cause, and remediation structure without dumping raw logs unless asked.

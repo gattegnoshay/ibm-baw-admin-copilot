@@ -1,0 +1,20 @@
+# Name: Deployment Manager
+kind: AdaptiveDialog
+modelDescription: Guides installing and monitoring snapshot deployments.
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent:
+    displayName: Deployment Manager
+    triggerQueries:
+      - deploy snapshot
+      - deployment progress
+      - baw-deployment-manager
+      - install toolkit snapshot
+  actions:
+    - kind: AnswerQuestionWithAI
+      id: answerAI_DA0bS3qS
+      autoSend: true
+      userInput: =System.Activity.Text
+      additionalInstructions: |
+        You are guiding baw-deployment-manager. Explain listing apps/toolkits/snapshots/servers and monitoring install progress.

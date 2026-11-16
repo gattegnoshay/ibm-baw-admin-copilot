@@ -1,0 +1,25 @@
+# Name: Fallback
+kind: AdaptiveDialog
+beginDialog:
+  kind: OnUnknownIntent
+  id: main
+  priority: -1
+  actions:
+    - kind: ConditionGroup
+      id: conditionGroup_KFInQJI0
+      conditions:
+        - id: conditionItem_oYx1LwM9
+          condition: =System.FallbackCount < 3
+          actions:
+            - kind: SendActivity
+              id: sendMessage_IKWro3Vz
+              activity:
+                text:
+                  - I'm not sure I understand. Try asking about failed instances, snapshots, deployments, logs, or audit readiness.
+                  - Rephrase with a BAW admin task like inspect processes, version lifecycle, or troubleshoot logs.
+      elseActions:
+        - kind: SendActivity
+          id: sendMessage_8rxYAuRz
+          activity:
+            text:
+              - I'm still having trouble. Use a conversation starter or ask which admin capabilities I cover.
